@@ -1,9 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 
-  /* Gradient + imagine suprapuse */
+  
   background-image: 
-    linear-gradient(135deg, #c4b7ff, #a0d8f0),
+    linear-gradient(135deg, #ac9cf4, #a4daf1),
     url('https://www.transparenttextures.com/patterns/cubes.png'); /* imagine subtilă */
 
   background-blend-mode: overlay;
@@ -26,12 +26,7 @@ main {
   backdrop-filter: blur(10px);
 }
 
-h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #0088cc;
-  text-align: center;
-  margin-bottom: 1rem;
-}
+
 
 form {
   display: flex;
@@ -39,15 +34,7 @@ form {
   gap: 1rem;
 }
 
-input[type="text"] {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 10px;
-  background: #e0e0e0; /* culoare deschisă */
-  color: #1a1a1a;
-  font-weight: 500;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-}
+
 
 .buttons-container {
   display: flex;
@@ -74,7 +61,7 @@ button:hover {
 #delete {
   display: block;
   margin: 2rem auto 0;
-  background: #ff4c4c;
+  background: #ec4040;
   color: #fff;
 }
 
@@ -97,31 +84,31 @@ table td, table th {
 table tr:hover {
   background: #f0f0f0;
 }
-/* Titlurile - Orbitron, sci-fi, futurist */
+
 h2 {
   font-family: 'Orbitron', sans-serif;
-  color: #00aaff;
+  color: #0d7bb3;
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.8rem; /* redus de la 2.5rem */
+  font-size: 1.8rem; 
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Etichete formular (label) */
+
 form label {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 600;
-  font-size: 0.95rem; /* redus ușor */
-  color: #222;
-  margin-bottom: 0.2rem;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  font-size: 1 rem; 
+  color: #a00a0a;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 1px 1px rgba(172, 27, 27, 0.347);
 }
 
-/* Input fields */
+
 input[type="text"] {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem; /* redus ușor */
+  font-size: 0.95rem;
   font-weight: 500;
   padding: 0.5rem;
   border: none;
@@ -129,14 +116,25 @@ input[type="text"] {
   background: #e0e0e0;
   color: #1a1a1a;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 60%; /* lățime normală mai mică */
+  transition: all 0.3s ease; /* efectul de tranziție */
 }
 
-/* Butoanele */
+/* Când utilizatorul face click pe input */
+input[type="text"]:focus {
+  width: 100%; /* se extinde */
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.4); /* un mic glow */
+  outline: none; /* scoate conturul implicit */
+}
+
+
+
 button {
   font-family: 'Orbitron', sans-serif;
-  font-size: 0.9rem; /* mai mic */
+  font-size: 0.9rem; 
   font-weight: 600;
-  padding: 0.6rem 1.2rem; /* ajustat */
+  padding: 0.6rem 1.2rem; 
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -148,7 +146,7 @@ button:hover {
 }
 
 
-/* RESPONSIVE: pentru ecrane sub 600px (telefon) */
+
 @media (max-width: 600px) {
   body {
     padding: 1rem;
